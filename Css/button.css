@@ -1,0 +1,50 @@
+.container button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    letter-spacing: .8px;
+    outline: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.container button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.container button:main,
+.container button:focus {
+    user-select: auto;
+}
+
+.container button:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.container button:disabled {
+    cursor: auto;
+}
