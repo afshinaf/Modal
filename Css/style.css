@@ -84,6 +84,7 @@ form input {
     top: 15px;
     border: none;
     border-radius: 1.2rem;
+    cursor: pointer;
 }
 
 .modal .body {
